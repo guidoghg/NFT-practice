@@ -1,0 +1,144 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue: hsl(217, 54%, 11%);
+    --darker-blue: hsl(216, 50%, 16%);
+    --dark-blue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.nftCard {
+    background-color: var(--darker-blue);
+    border-radius: 1rem;
+    max-width: 20rem;
+}
+
+.nftImage {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.nftImage .mainImage{
+    max-width: 85%;
+    height: auto;
+    margin: 1.5rem;
+    border-radius: 1rem;
+}
+
+.nftImage .hiddenImg {
+    position:absolute;
+    display:none;
+}
+
+.nftImage:hover .hiddenImg{
+    display:flex;
+    cursor: pointer;
+}
+
+.overlay {
+    width: 17rem;
+    height: 17rem;
+    border-radius: 1rem;
+    visibility: hidden;
+    position: absolute;
+    background-color: var(--cyan);
+    opacity: .5;
+}
+
+.nftImage:hover .overlay {
+    visibility: visible;
+    cursor: pointer;
+}
+
+
+.avatarIcon {
+    border-style: solid;
+    border-color: white;
+    border-radius: 6rem;
+    border-width: thin;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    height: auto;
+    width: 2rem;
+}
+
+h1 {
+    font-weight: 600;
+    color: var(--white);
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.paragraph {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: var(--soft-blue);
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+.priceTime {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    padding-left: 1.5rem;
+    color: var(--cyan);
+    font-weight: 400;
+}
+
+.timeLeft {
+    padding-right: 1.5rem;
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+.author {
+    display: flex;
+}
+
+.author1 {
+    padding-left: 1.5rem;
+    padding-top: 0;
+    margin-top: 0.5rem;
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+.author1 b {
+    color: var(--white);
+    font-weight: 300;
+}
+
+.author1 b:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+h1:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.line {
+    max-width: 20rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    color: var(--soft-blue);
+    border-style: solid;
+    
+}
